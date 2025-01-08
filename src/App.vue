@@ -25,4 +25,7 @@ import BackToTop from "./components/BackToTop.vue";
   font-family: "Afacad Flux", sans-serif;
   font-weight: 400;
 }
+body{
+  
+}
 </style>

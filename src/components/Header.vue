@@ -185,10 +185,10 @@ nav a:hover span {
 
   nav {
     width: 100%;
-    height: calc(100vh - 67px);
+    height: calc(100vh - 57px);
     position: absolute;
     left: -100%;
-    top: 58px;
+    top: 57px;
     flex-direction: column;
     justify-content: space-around;
     transition: 2s;

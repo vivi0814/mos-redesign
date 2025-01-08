@@ -218,6 +218,7 @@ const youtubeUrl = ref(
 
 .body {
   position: relative;
+  overflow-x: hidden;
 }
 
 .carousel {
@@ -325,18 +326,19 @@ const youtubeUrl = ref(
     gap: 20px;
   }
   .news-item {
-    width: calc(28rem - 20px);
+    width: calc(22rem - 20px);
     margin-top: 20px;
     transition: transform 0.3s;
     &:hover {
-      transform: translateY(-5px); /* 滑鼠懸停時上移效果 */
+      transform: translateY(-5px); 
     }
     > a {
       text-decoration: none;
     }
     .news-item-pic {
-      width: 100%;
+      width: 20rem;
       position: relative;
+      margin: auto;
       img {
         width: 100%;
       }
@@ -429,11 +431,14 @@ const youtubeUrl = ref(
     .intro-img {
       margin-top: 10px;
       // margin-right: -2rem;
-      width: 47%;
-      min-width: 300px;
+      width: 45%;
+      min-width: 250px;
       height: 300px;
       // background: url("../src/assets/img/image 28.png") no-repeat center;
       animation: float 3s ease-in-out infinite;
+      img{
+        width: 95%;
+      }
     }
     @keyframes float {
       0% {
@@ -499,6 +504,16 @@ const youtubeUrl = ref(
     .content-intro {
       .intro-txt-img {
         justify-content: space-around;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content {
+    .news-item {
+      width: calc(28rem - 20px);
+      .news-item-pic {
+        width: 26rem;
       }
     }
   }
