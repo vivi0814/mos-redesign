@@ -132,7 +132,7 @@
             人生就像一場旅行，旅途中有願意陪伴您一起的好夥伴，就是「幸福的滋味」
           </p>
           <div class="intro-img">
-            <img src="@/assets/img/image 28.png" alt="image" />
+            <img src="/assets/img/image 28.png" alt="image" />
           </div>
         </div>
         <span class="intro-block"></span>
@@ -163,21 +163,21 @@ const modules = [Navigation, Autoplay];
 
 const slides = ref([
   { image: "/assets/img/mos-banner.jpg" },
-  { image: "../src/assets/img/mos-banner-2.jpg" },
-  { image: "../src/assets/img/mos-banner-3.jpg" },
-  { image: "../src/assets/img/mos-banner-4.jpg" },
+  { image: "/assets/img/mos-banner-2.jpg" },
+  { image: "/assets/img/mos-banner-3.jpg" },
+  { image: "/assets/img/mos-banner-4.jpg" },
 ]);
 
 const BurgerItems = ref([
-  { image: "../src/assets/img/burger.png", title: "照燒青梅豬排堡" },
-  { image: "../src/assets/img/burger2.png", title: "北海道起司牛肉堡" },
-  { image: "../src/assets/img/burger3.png", title: "元氣魔力珍珠堡" },
-  { image: "../src/assets/img/burger4.png", title: "和風舒活牛肉堡" },
-  { image: "../src/assets/img/burger5.png", title: "元氣牛肉珍珠堡" },
-  { image: "../src/assets/img/burger6.png", title: "摘鮮綠摩斯炸蝦堡" },
-  { image: "../src/assets/img/burger7.png", title: "海洋珍珠大麥堡" },
-  { image: "../src/assets/img/burger4.png", title: "和風舒活牛肉堡" },
-  { image: "../src/assets/img/burger2.png", title: "北海道起司牛肉堡" },
+  { image: "/assets/img/burger.png", title: "照燒青梅豬排堡" },
+  { image: "/assets/img/burger2.png", title: "北海道起司牛肉堡" },
+  { image: "/assets/img/burger3.png", title: "元氣魔力珍珠堡" },
+  { image: "/assets/img/burger4.png", title: "和風舒活牛肉堡" },
+  { image: "/assets/img/burger5.png", title: "元氣牛肉珍珠堡" },
+  { image: "/assets/img/burger6.png", title: "摘鮮綠摩斯炸蝦堡" },
+  { image: "/assets/img/burger7.png", title: "海洋珍珠大麥堡" },
+  { image: "/assets/img/burger4.png", title: "和風舒活牛肉堡" },
+  { image: "/assets/img/burger2.png", title: "北海道起司牛肉堡" },
 ]);
 const breakpoints = {
   400: { slidesPerView: 2 },
@@ -192,21 +192,21 @@ const autoplay = {
   disableOnInteraction: false,
 };
 const NewsItems = ref([
-  { image: "../src/assets/img/new1.png" },
-  { image: "../src/assets/img/new2.png" },
+  { image: "/assets/img/new1.png" },
+  { image: "/assets/img/new2.png" },
 ]);
 const BlocksItems = ref([
-  { image: "../src/assets/img/Group 158.png" },
-  { image: "../src/assets/img/Group 159.png" },
-  { image: "../src/assets/img/Group 27.png" },
-  { image: "../src/assets/img/Group 28.png" },
-  { image: "../src/assets/img/image 57.png" },
-  { image: "../src/assets/img/image 58.png" },
-  { image: "../src/assets/img/image 59.png" },
+  { image: "/assets/img/Group 158.png" },
+  { image: "/assets/img/Group 159.png" },
+  { image: "/assets/img/Group 27.png" },
+  { image: "/assets/img/Group 28.png" },
+  { image: "/assets/img/image 57.png" },
+  { image: "/assets/img/image 58.png" },
+  { image: "/assets/img/image 59.png" },
 ]);
 const BlocksItemsSocial = [
-  { image: "../src/assets/img/Group 223.png" },
-  { image: "../src/assets/img/Group 36.png" },
+  { image: "/assets/img/Group 223.png" },
+  { image: "/assets/img/Group 36.png" },
 ];
 const youtubeUrl = ref(
   "https://www.youtube.com/embed/n8cZxqIH6kM?autoplay=1&loop=1&playlist=n8cZxqIH6kM&mute=1&controls=0&rel=0&modestbranding=1"
@@ -305,10 +305,10 @@ const youtubeUrl = ref(
     border: none;
   }
   .swiper .swiper-button-next {
-    background: url("../src/assets/img/arrow-right.png") no-repeat center;
+    background: url("/assets/img/arrow-right.png") no-repeat center;
   }
   .swiper .swiper-button-prev {
-    background: url("../src/assets/img/arrow-left.png") no-repeat center;
+    background: url("/assets/img/arrow-left.png") no-repeat center;
   }
 }
 .content {
@@ -456,7 +456,7 @@ const youtubeUrl = ref(
       margin-left: -2rem;
       width: 350px;
       height: 300px;
-      background: url("../src/assets/img/image 33.png") no-repeat center;
+      background: url("/assets/img/image 33.png") no-repeat center;
       animation: float 3s ease-in-out infinite;
     }
     .intro-block {
