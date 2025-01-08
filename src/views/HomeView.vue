@@ -162,7 +162,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 const modules = [Navigation, Autoplay];
 
 const slides = ref([
-  { image: "../src/assets/img/mos-banner.jpg" },
+  { image: "@/assets/img/mos-banner.jpg" },
   { image: "../src/assets/img/mos-banner-2.jpg" },
   { image: "../src/assets/img/mos-banner-3.jpg" },
   { image: "../src/assets/img/mos-banner-4.jpg" },
