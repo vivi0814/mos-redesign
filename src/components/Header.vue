@@ -4,7 +4,7 @@
     <header>
       <div class="logo">
         <router-link to="/"
-          ><img src="assets/img/Group 157 (1).svg" alt="mos-logo"
+          ><img src="/assets/img/Group 157 (1).svg" alt="mos-logo"
         /></router-link>
       </div>
 
