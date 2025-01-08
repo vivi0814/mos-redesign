@@ -3,7 +3,7 @@
     <!-- 左側 Logo -->
     <div class="footer-left">
       <img
-        src="assets/img/Group 157 (1).svg"
+        src="/assets/img/Group 157 (1).svg"
         alt="Logo"
         class="footer-logo"
       />
