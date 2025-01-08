@@ -3,7 +3,7 @@
     <!-- 左側 Logo -->
     <div class="footer-left">
       <img
-        src="../assets/img/Group 157 (1).svg"
+        src="assets/img/Group 157 (1).svg"
         alt="Logo"
         class="footer-logo"
       />
@@ -25,16 +25,16 @@
     <!-- 右側社群平台 Icon -->
     <div class="footer-right">
       <a href="#" class="social-icon">
-        <img src="@/assets/img/instagram.png" alt="instagram" />
+        <img src="/assets/img/instagram.png" alt="instagram" />
       </a>
       <a href="#" class="social-icon">
-        <img src="@/assets/img/youtube.png" alt="youtube" />
+        <img src="/assets/img/youtube.png" alt="youtube" />
       </a>
       <a href="#" class="social-icon">
-        <img src="@/assets/img/twitter.png" alt="twitter" />
+        <img src="/assets/img/twitter.png" alt="twitter" />
       </a>
       <a href="#" class="social-icon">
-        <img src="@/assets/img/facebook.png" alt="facebook" />
+        <img src="/assets/img/facebook.png" alt="facebook" />
       </a>
     </div>
   </footer>
