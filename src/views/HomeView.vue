@@ -383,11 +383,12 @@ const youtubeUrl = ref(
     .intro-txt-img {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       // justify-content: space-between;
       padding: 10px;
     }
     .intro-txt {
-      margin-top: 3rem;
+      // margin-top: 3rem;
       color: $text_color_main;
       width: 45%;
       min-width: 300px;
