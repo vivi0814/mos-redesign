@@ -139,15 +139,15 @@ const slides = ref([
 ]);
 
 const BurgerItems = ref([
-  { image: "/assets/img/burger.png", title: "照燒青梅豬排堡" },
-  { image: "/assets/img/burger2.png", title: "北海道起司牛肉堡" },
-  { image: "/assets/img/burger3.png", title: "元氣魔力珍珠堡" },
-  { image: "/assets/img/burger4.png", title: "和風舒活牛肉堡" },
-  { image: "/assets/img/burger5.png", title: "元氣牛肉珍珠堡" },
-  { image: "/assets/img/burger6.png", title: "摘鮮綠摩斯炸蝦堡" },
-  { image: "/assets/img/burger7.png", title: "海洋珍珠大麥堡" },
-  { image: "/assets/img/burger4.png", title: "和風舒活牛肉堡" },
-  { image: "/assets/img/burger2.png", title: "北海道起司牛肉堡" },
+  { image: "/assets/img/burger.svg", title: "照燒青梅豬排堡" },
+  { image: "/assets/img/burger2.svg", title: "北海道起司牛肉堡" },
+  { image: "/assets/img/burger3.svg", title: "元氣魔力珍珠堡" },
+  { image: "/assets/img/burger4.svg", title: "和風舒活牛肉堡" },
+  { image: "/assets/img/burger5.svg", title: "元氣牛肉珍珠堡" },
+  { image: "/assets/img/burger6.svg", title: "摘鮮綠摩斯炸蝦堡" },
+  { image: "/assets/img/burger7.svg", title: "海洋珍珠大麥堡" },
+  { image: "/assets/img/burger4.svg", title: "和風舒活牛肉堡" },
+  { image: "/assets/img/burger2.svg", title: "北海道起司牛肉堡" },
 ]);
 const breakpoints = {
   400: { slidesPerView: 2 },
