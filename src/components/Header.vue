@@ -28,9 +28,15 @@
         </router-link> -->
         <a class="fontSize16-15em">
           <span class="material-symbols-outlined"> lunch_dining </span>美味專區
+          <!-- <svg class="icon" width="48" height="48">
+            <use xlink:href="#icon-lunch-dining"></use>
+          </svg> -->
+          <!-- <SvgIcon name="person" /> -->
+          <!-- <img src="/assets/img/lunch_dining.svg" alt="lunch_dining" /> -->
         </a>
         <a class="fontSize16-15em">
           <span class="material-symbols-outlined"> storefront </span>店舖情報
+          <!-- <img src="/assets/img/storefront.svg" alt=""> -->
         </a>
         <a class="fontSize16-15em">
           <span class="material-symbols-outlined"> person </span>會員專區

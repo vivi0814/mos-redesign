@@ -1,56 +1,26 @@
 <template>
   <div class="body">
-    <!-- Carousel Section -->
-    <div class="carousel">
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-bs-ride="carousel"
+    <div class="banner">
+      <swiper
+        :navigation="{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }"
+        :modules="modules"
+        :autoplay="autoplay"
+        :loop="true"
+        class="mySwiper"
       >
-        <!-- Carousel indicators -->
-        <div class="carousel-indicators">
-          <button
-            v-for="(slide, index) in slides"
-            :key="index"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            :data-bs-slide-to="index"
-            :class="{ active: index === 0 }"
-            :aria-current="index === 0"
-            :aria-label="'Slide ' + (index + 1)"
-          ></button>
-        </div>
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-          <div
-            v-for="(slide, index) in slides"
-            :key="index"
-            class="carousel-item"
-            :class="{ active: index === 0 }"
-          >
-            <img class="d-block w-100" :src="slide.image" :alt="slide.image" />
-          </div>
-        </div>
-        <!-- Carousel controls -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
+        <button class="swiper-button-next"></button>
+        <button class="swiper-button-prev"></button>
+        <swiper-slide
+          v-for="(slide, index) in slides"
+          :key="index"
+          class="banner-item"
         >
-          <span class="material-symbols-outlined">arrow_circle_left</span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="material-symbols-outlined">arrow_circle_right</span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+          <img :src="slide.image" :alt="slide.image" loading="lazy" />
+        </swiper-slide>
+      </swiper>
     </div>
     <div class="burger">
       <span class="burger-block"></span>
@@ -76,7 +46,7 @@
         >
           <a href="#">
             <div class="burger-item-pic">
-              <img :src="item.image" :alt="item.title" />
+              <img :src="item.image" :alt="item.title" loading="lazy" />
             </div>
             <p class="burger-title">{{ item.title }}</p>
           </a>
@@ -88,7 +58,7 @@
         <div v-for="(item, index) in NewsItems" :key="index" class="news-item">
           <a href="#">
             <div class="news-item-pic">
-              <img :src="item.image" :alt="item.image" />
+              <img :src="item.image" :alt="item.image" loading="lazy" />
               <p class="more fontSize16-15em">
                 more
                 <span class="material-symbols-outlined"> arrow_right_alt </span>
@@ -132,7 +102,7 @@
             人生就像一場旅行，旅途中有願意陪伴您一起的好夥伴，就是「幸福的滋味」
           </p>
           <div class="intro-img">
-            <img src="/assets/img/image 28.png" alt="image" />
+            <img src="/assets/img/image 28.png" alt="image" loading="lazy" />
           </div>
         </div>
         <span class="intro-block"></span>
@@ -220,26 +190,27 @@ const youtubeUrl = ref(
   position: relative;
   overflow-x: hidden;
 }
-
-.carousel {
-  position: relative;
-  .material-symbols-outlined {
-    font-size: 2rem;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    position: absolute;
-    top: 90%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  .carousel .carousel-control-prev {
-    left: -5px;
-  }
-  .carousel-control-next {
-    right: -5px;
+.banner {
+  .swiper {
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-color: #fff;
+      color: $text_color_main;
+      border-radius: 50%;
+      border: none;
+      width: 40px;
+      height: 40px;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 12px;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 .burger {
@@ -319,24 +290,24 @@ const youtubeUrl = ref(
   justify-content: center;
   align-items: center;
 
-  .content-news {
+  .content-news,
+  .content-block {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
   .news-item {
-    width: calc(22rem - 20px);
+    width: 95%;
     margin-top: 20px;
     transition: transform 0.3s;
     &:hover {
-      transform: translateY(-5px); 
+      transform: translateY(-5px);
     }
     > a {
       text-decoration: none;
     }
     .news-item-pic {
-      width: 20rem;
       position: relative;
       margin: auto;
       img {
@@ -355,14 +326,8 @@ const youtubeUrl = ref(
       }
     }
   }
-  .content-block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
   .blocks-item {
-    width: calc(14rem - 20px);
+    width: calc(50% - 20px);
     margin-top: 20px;
     transition: transform 0.3s;
     &:hover {
@@ -391,7 +356,7 @@ const youtubeUrl = ref(
     }
   }
   .blocks-item-social {
-    width: calc(14rem - 20px);
+    width: calc(50% - 20px);
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -436,7 +401,7 @@ const youtubeUrl = ref(
       height: 300px;
       // background: url("../src/assets/img/image 28.png") no-repeat center;
       animation: float 3s ease-in-out infinite;
-      img{
+      img {
         width: 95%;
       }
     }
@@ -501,6 +466,14 @@ const youtubeUrl = ref(
 }
 @media screen and (min-width: 768px) {
   .content {
+    .news-item {
+      width: calc(50% - 20px);
+    }
+    .blocks-item,
+    .blocks-item-social {
+      width: calc(25% - 20px);
+    }
+
     .content-intro {
       .intro-txt-img {
         justify-content: space-around;
@@ -510,12 +483,12 @@ const youtubeUrl = ref(
 }
 @media screen and (min-width: 1024px) {
   .content {
-    .news-item {
-      width: calc(28rem - 20px);
-      .news-item-pic {
-        width: 26rem;
-      }
-    }
+    // .news-item {
+    //   width: calc(28rem - 20px);
+    //   .news-item-pic {
+    //     width: 26rem;
+    //   }
+    // }
   }
 }
 </style>

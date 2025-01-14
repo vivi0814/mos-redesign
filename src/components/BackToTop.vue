@@ -33,9 +33,6 @@ onUnmounted(() => {
 .back-to-top {
   position: sticky;
   bottom: 40px;
-  //   margin-bottom: 20px;
-  //   margin-top: -60px;
-  //   right: 20px;
   left: 90vw;
   background-color: #ffffff;
   color: $text_color_main;
