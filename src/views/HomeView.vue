@@ -316,7 +316,7 @@ const youtubeUrl = ref(
       .more {
         position: absolute;
         right: -1px;
-        bottom: -17px;
+        bottom: 0;
         padding: 2px 7px;
         display: flex;
         align-items: center;
@@ -345,7 +345,7 @@ const youtubeUrl = ref(
       .more {
         position: absolute;
         right: -1px;
-        bottom: -17px;
+        bottom: 0;
         padding: 2px 7px;
         display: flex;
         align-items: center;
@@ -481,14 +481,5 @@ const youtubeUrl = ref(
     }
   }
 }
-@media screen and (min-width: 1024px) {
-  .content {
-    // .news-item {
-    //   width: calc(28rem - 20px);
-    //   .news-item-pic {
-    //     width: 26rem;
-    //   }
-    // }
-  }
-}
+
 </style>
